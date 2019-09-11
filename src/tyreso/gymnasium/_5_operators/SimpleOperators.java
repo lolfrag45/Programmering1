@@ -3,6 +3,7 @@ package tyreso.gymnasium._5_operators;
 public class SimpleOperators {
 
     public static void main(String[] args) {
+        
 
         //Variabedeklaration och initialisation
         long numOne = 3;

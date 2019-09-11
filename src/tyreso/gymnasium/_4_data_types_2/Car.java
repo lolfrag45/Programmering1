@@ -12,6 +12,8 @@ class Car {
     int numSeats;
     double lenghtCentimetres;
     double heightCentimetres;
+    double speed;
+    double maxSpeed;
 
     //Reference types, aka Objects
     Long numMetersDriven;   //Wrapper type for long primitive datatype
@@ -19,7 +21,7 @@ class Car {
     Door shotgunDoor;
     Engine engine;
 
-    Car(String name, int numDoors, int numSeats, double lenghtCentimetres, double heightCentimetres, Engine engine ){
+    Car(String name, int numDoors, int numSeats, double lenghtCentimetres, double heightCentimetres, Engine engine, double maxSpeed ){
 
         //Using the passed parameters to make the object with the variable values you want
         this.name = name;
@@ -34,6 +36,8 @@ class Car {
         //https://en.wikipedia.org/wiki/List_of_cars_with_non-standard_door_designs
         this.driverDoor = new Door("Gullwing");
         this.shotgunDoor = new Door("Standard");
+        this.speed = 0;
+        this.maxSpeed = maxSpeed;
     }
 
     /**
@@ -52,4 +56,21 @@ class Car {
      * 1. Let's add variables for speed
      * 2. ...and methods for changing the speed
      */
+    public void accelerate(double acceleration) {
+
+        if (speed <= maxSpeed) {
+            speed += acceleration;
+        } else if (speed >= maxSpeed) {
+        }
+
+    }
+
+    public void decelerate( double deceleration){
+        if (speed < 0)
+            speed -= deceleration;
+
+    }
+
+
 }
+

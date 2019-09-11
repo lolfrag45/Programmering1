@@ -28,6 +28,17 @@ public class OddOrEven {
 
         //TODO YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!
 
+        long ResultatA = a % 2;
+        long ResultatB = b % 2;
+        long ResultatC = c % 2;
+
+        System.out.println("Om de blir 0 så är de jämt och om de blir 1 så är det ojämt");
+        System.out.println("Svar " + ResultatA);
+        System.out.println("Talet " + a );
+        System.out.println("Svar " + ResultatB);
+        System.out.println("Talet " + b );
+        System.out.println("Svar " + ResultatC);
+        System.out.println("talet " + c );
 
         //TODO BONUS CHALLENGE BELOW!!!  BONUS CHALLENGE BELOW!!!  BONUS CHALLENGE BELOW!!!  BONUS CHALLENGE BELOW!!!
         /**
